@@ -1,7 +1,6 @@
 @use "../scss/variables.scss" as *;
 
 .description__panel {
-  margin-bottom: 1rem;
   flex-basis: 50%;
   overflow: hidden;
   p {
@@ -11,7 +10,7 @@
     background-color: $color-primary;
     color: $color-tertiary;
     padding: 0.2em 1em;
-    border-radius: 0.7rem;
+    border-radius: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,9 +31,11 @@
     transition: transform 0.3s ease-in-out;
     &.hidden {
       transform: translateY(-100%);
+      margin-bottom: -3.1rem;
     }
     &.visible {
       transform: translateY(0);
+      margin-bottom: 2rem;
     }
   }
 }

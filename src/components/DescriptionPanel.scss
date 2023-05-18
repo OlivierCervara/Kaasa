@@ -31,11 +31,10 @@
     transition: transform 0.3s ease-in-out;
     &.hidden {
       transform: translateY(-100%);
-      margin-bottom: -3.1rem;
     }
     &.visible {
       transform: translateY(0);
-      margin-bottom: 2rem;
+      
     }
   }
 }

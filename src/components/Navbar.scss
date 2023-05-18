@@ -11,11 +11,25 @@
     text-transform: uppercase;
     font-weight: 400;
     padding: 0;
+    height: 50px;
+    margin-bottom: 25px;
+    padding-top: 20px;
+  }
+  @media screen and (width <= 667px) {
+    padding-top: 25px;
+    font-size: smaller;
   }
   & > *:first-child {
     margin-right: auto;
+    @media screen and (width <= 667px) {
+      margin-right: 0;
+    }
   }
   & a {
+    white-space: nowrap;
+    @media screen and (width <= 667px) {
+      padding-top: 25px;
+    }
     text-decoration: none;
     color: $color-primary;
     &.active,

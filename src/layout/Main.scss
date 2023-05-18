@@ -1,8 +1,7 @@
 .main {
-    padding: 2rem 3rem;
-    min-height: 60vh;
-    @media screen and (width <= 768px) {
-      padding: 1rem;
-      margin-right: -78px;
-    }
+  padding: 2rem 3rem;
+  min-height: 60vh;
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
   }
+}

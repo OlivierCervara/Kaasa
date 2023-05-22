@@ -20,3 +20,4 @@ function ApartmentCard(props) {
 }
 
 export default ApartmentCard;
+

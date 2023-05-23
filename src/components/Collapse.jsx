@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./DescriptionPanel.scss";
+import "./Collapse.scss";
 
-export function DescriptionPanel(props) {
+export function Collapse(props) {
   const [isContentVisible, setIsContentVisible] = useState(false); // défini un état local à l'aide du hook useState. Définit la variable "isContentVisible" et la fonction "setIsContentVisible" pour gérer si le contenu du panneau est visible ou non. Par défaut, "isContentVisible" est initialisé à "true", donc le contenu est visible par défaut.
 
   const showContent = () => { // la fonction "showContent" est définie pour inverser la valeur de "isContentVisible" lorsqu'elle est appelée. Cela permet de cacher ou de montrer le contenu du panneau en cliquant sur le titre.
@@ -20,4 +20,4 @@ export function DescriptionPanel(props) {
   );
 }
 
-export default DescriptionPanel;
+export default Collapse;

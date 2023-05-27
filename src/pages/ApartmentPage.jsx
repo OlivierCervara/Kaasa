@@ -15,7 +15,7 @@ function ApartmentPage() {
       <div className="apartment__description__area">
         <Collapse title="Description" content={flat.description} /> {/*utilise la propriété "title" pour afficher le titre "Description" et la propriété "content" pour afficher la description de l'appartement. */}
         <Collapse
-          title="Equipements" //utilise la propriété "title" pour afficher le titre "Equipements", 
+          title="Équipements" //utilise la propriété "title" pour afficher le titre "Equipements", 
           content={flat.equipments.map((eq, i) => ( //et utilise la méthode ".map" pour afficher chaque équipement de la liste "flat.equipments" sous la forme d'une liste HTML.
             <li key={i}>{eq}</li>
           ))}

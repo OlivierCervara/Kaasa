@@ -14,6 +14,15 @@
   color: $color-tertiary;
   margin-bottom: 2rem;
   max-width: 100%;
+  h1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    @media screen and (width <= 667px) {
+      font-size: 1.8rem;
+    }
+  }
   &::before {
     position: absolute;
     border-radius: 2rem;

@@ -20,5 +20,8 @@
     justify-content: center;
     background-color: $grid-background-light;
     padding: 0;
+    & > * {
+      max-width: none;
+    }
   }
 }

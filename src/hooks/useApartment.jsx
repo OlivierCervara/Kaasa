@@ -14,9 +14,6 @@ export function useApartment() {
         setFlat(flat); //Le résultat de cette recherche est stocké dans la variable flat en utilisant la fonction setFlat.
       })
       .catch(console.error);
-    return () => {
-      abortController.abort(); //Cette fonction de retour est appelée avant le démontage du composant pour annuler la requête 
-    };
   },);
   return flat; //renvoie la variable flat, qui est soit null si la requête fetch n'a pas encore renvoyé de résultat, soit l'objet flat contenant les détails de l'appartement correspondant à l'ID de l'appartement dans l'objet location.
 }
